@@ -1,0 +1,5 @@
+The setSelectedIndex function is not defined correctly. It should be defined using useState hook. It can be defined like:
+const[selectedIndex, setSelectedIndex]=useState(null);
+The isSelected prop in the SingleListItem component is not being passed correctly. It can be corrected by: isSelected={selectedIndex === index}
+The PropTypes for the items prop in the WrappedListComponent component are not defined correctly.
+It should be defined like: PropTypes.arrayOf{PropTypes.shape({text: PropTypes.string.isRequired}))
